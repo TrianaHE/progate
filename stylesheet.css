@@ -27,6 +27,9 @@ body {
 a {
   text-decoration: none;
 }
+.clear{
+  clear:left;
+}
 
 .container {
 	max-width: 1170px;
@@ -127,7 +130,6 @@ header {
   padding-right: 5%;
   background-color: #FFEBCD;
   text-align: center;
-  height: 600px;
 }
 
 .heading {
