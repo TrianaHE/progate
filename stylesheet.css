@@ -1,0 +1,263 @@
+@keyframes typing {
+ from {width: 0}
+ to {display: inline-block; width: 100%}
+}
+
+@keyframes cursor {
+	from, to { border-color: transparent; }
+    50% { border-color: #ffba93; }
+}
+
+
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+body {
+  font-family: "Lucida Grande";
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+	max-width: 1170px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+header {
+	height: 65px;
+	width: 100%;
+	background-color: rgba(255, 186, 147, 0.7);
+	position: fixed;
+	top: 0;
+	z-index: 10;
+}
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display:none;
+}
+
+.header-left {
+	float: left;
+}
+
+.logo {
+	width: 124px;
+	margin-top: 20px;
+}
+
+.header-right {
+	float: right;
+	margin-right: -20px;
+}
+
+.header-right a {
+	height: 65px;
+	line-height: 65px;
+	float: left;
+	color: white;
+	padding: 0 25px;
+	transition: all 0.6s;
+}
+
+.header-right a:hover {
+	background-color: rgba(175, 107, 88, 0.9);
+}
+
+.top-wrapper {
+	color: white;
+	background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/73985275745693.5c550d6d82dd0.jpg");
+	background-size: cover;
+	padding: 100px 0 180px 0;
+	height: 400px;
+	text-align: center;
+}
+
+.top-text {
+	position: relative;
+	top: 150px;
+}
+
+.top-wrapper span {
+	opacity: 0.7;
+	color: #ffba93;
+	transition: all 0.6s;
+}
+
+.top-wrapper h1 {
+	border-right: .15em solid #ffba93;
+	max-width: fit-content;
+	display: inline-block;
+	overflow: hidden;
+	white-space: nowrap;
+	margin: 0 auto;
+	padding: 0 15px 10px 5px;
+	font-size: 75px;
+	animation: typing 3.5s steps(40, end),
+			   cursor .75s step-end infinite;
+}
+
+.top-wrapper h3 {
+	font-size: 18px;
+	opacity: 0.5;
+	padding: 5px 0;
+	transition: all 0.6s;
+}
+
+.top-wrapper h3:hover, span:hover {
+	opacity: 1;
+}
+
+.profile-wrapper {
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #FFEBCD;
+  text-align: center;
+  height: 600px;
+}
+
+.heading {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: black;
+}
+
+.heading h2 {
+  font-weight: normal;
+}
+
+.profile {
+  float: left;
+  width: 20%;
+}
+
+.profile-picture {
+  position: relative;
+}
+
+.profile-picture p {
+	font-size: 14px;
+  position: absolute;
+  width: 100%;
+  color: black;
+  top: 340px;
+}
+
+.txt-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 15px;
+  color: black;
+}
+
+.profile-picture img {
+  width: 200px;
+  border:1px;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.btn {
+  position: absolute;
+  margin : 150px -150px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.linkedin {
+  padding: 10px 30px;
+  background-color: #FFA07A;
+  cursor: pointer;
+  box-shadow: 0 7px #FA8072;
+}
+
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
+  background-color: #FFEBCD;
+}
+
+.quotes h2 {
+	font-size: 20px;
+  font-weight: normal;
+  font-style: oblique;
+}
+
+.quotes h3 {
+  font-style: oblique;
+}
+
+.contact-form {
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #FFEBCD;
+  height: 450px;
+}
+
+.heading-contact {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+input, textarea {
+  width: 400px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 20px;
+  font-size: 18px;
+  border: 1px solid #dee7ec;
+}
+
+.kirim {
+  padding: 10px 30px;
+  margin: 130px -440px;
+  background-color: #FFA07A;
+  cursor: pointer;
+  box-shadow: 0 7px #FA8072;
+}
+
+.footer {
+  background-color: rgba(255, 186, 147);
+  color: #fff;
+  height: 120px;
+  padding: 40px;
+}
+
+footer img {
+  float: left;
+  width: 150px;
+}
+
+.footer-list {
+  float: right;
+}
+
+.footer-list li {
+  padding-bottom: 20px;
+}
